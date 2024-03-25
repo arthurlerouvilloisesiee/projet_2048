@@ -7,11 +7,11 @@ EDGE_LENGTH = 400
 CELL_COUNT = 4
 CELL_PAD = 10
 
-UP_KEY = "'w'"
+UP_KEY = "'z'"
 DOWN_KEY = "'s'"
-LEFT_KEY = "'a'"
+LEFT_KEY = "'q'"
 RIGHT_KEY= "'d'"
-AI_KEY = "'q'"
+AI_KEY = "'o'"
 AI_PLAY_KEY = "'p'"
 
 LABEL_FONT = ("Verdana", 40, "bold")
@@ -114,3 +114,4 @@ class Display(Frame):
                 self.draw_grid_cells()
                 move_made = False
 gamegrid = Display()
+
