@@ -13,12 +13,6 @@ from game_functions import initialize_game, random_move,\
                             move_right, move_up,\
                             check_for_win, add_new_tile
 
-                        
-
-def get_search_params(move_number):
-    searches_per_move = SPM_SCALE_PARAM * (1+(move_number // SEARCH_PARAM))
-    search_length = SL_SCALE_PARAM * (1+(move_number // SEARCH_PARAM))
-    return searches_per_move, search_length
 
 def ai_move(board, searches_per_move, search_length):
     possible_first_moves = [move_left, move_up, move_down, move_right]
