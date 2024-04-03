@@ -114,3 +114,4 @@ class Display(Frame):
                 self.draw_grid_cells()
                 move_made = False
 gamegrid = Display()
+
