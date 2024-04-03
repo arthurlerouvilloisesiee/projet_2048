@@ -7,11 +7,11 @@ EDGE_LENGTH = 400
 CELL_COUNT = 4
 CELL_PAD = 10
 
-UP_KEY = "'w'"
+UP_KEY = "'z'"
 DOWN_KEY = "'s'"
-LEFT_KEY = "'a'"
+LEFT_KEY = "'q'"
 RIGHT_KEY= "'d'"
-AI_KEY = "'q'"
+AI_KEY = "'o'"
 AI_PLAY_KEY = "'p'"
 
 LABEL_FONT = ("Verdana", 40, "bold")
@@ -36,7 +36,7 @@ class Display(Frame):
 
         self.grid()
         self.master.title('2048')
-        self.master.bind("<Key>", self.key_press)
+        self.master.bind("<Key>", self.key_press)  
 
         self.commands = {UP_KEY: game_functions.move_up, 
                          DOWN_KEY: game_functions.move_down,
